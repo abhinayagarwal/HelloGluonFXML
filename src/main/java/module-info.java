@@ -1,5 +1,4 @@
 module hellogluon {
-    requires glisten.afterburner;
     requires javafx.fxml;
     requires javafx.controls;
     requires com.gluonhq.attach.display;
@@ -8,5 +7,6 @@ module hellogluon {
     requires com.gluonhq.charm.glisten;
 
     opens com.gluonhq.hello.views to javafx.fxml;
-    exports com.gluonhq.hello;
+    exports com.gluonhq.hello to javafx.graphics;
+    exports com.gluonhq.hello.views;
 }

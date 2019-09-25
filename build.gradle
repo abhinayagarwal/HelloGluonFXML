@@ -13,20 +13,23 @@ repositories {
 
 dependencies {
     implementation "com.gluonhq:charm-glisten:6.0.1"
-    compile 'com.gluonhq:glisten-afterburner:1.4.0-jdk9'
 }
 
 gluonClient {
-//    target = "ios"  // uncomment to deploy on iOS
 
     attachConfig {
         services 'display', 'lifecycle', 'statusbar', 'storage'
     }
 
     bundlesList = ["com.gluonhq.hello.views.hello"]
-    reflectionList = ["javafx.fxml.FXMLLoader", "com.gluon.hello.views.HelloPresenter", 
-              "javafx.scene.control.Button", "javafx.scene.control.Label"]
-//    reflectionList = ["com.gluonhq.impl.charm.glisten.control.skin.GlistenButtonSkin"]
+    reflectionList = [
+            "javafx.fxml.FXMLLoader", 
+            "com.gluonhq.hello.views.HelloPresenter", 
+            "javafx.scene.control.Button", 
+            "javafx.scene.control.Label",
+            "com.gluonhq.impl.charm.glisten.control.skin.GlistenButtonSkin"
+    ]
+    verbose = true
 }
 
 javafx {
