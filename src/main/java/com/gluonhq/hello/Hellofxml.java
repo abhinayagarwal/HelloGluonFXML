@@ -6,10 +6,10 @@
 package com.gluonhq.hello;
 
 import com.gluonhq.charm.glisten.mvc.View;
+import javafx.fxml.FXMLLoader;
+
 import java.io.IOException;
 import java.util.ResourceBundle;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.AnchorPane;
 
 /**
  *
@@ -23,8 +23,7 @@ public class Hellofxml extends View {
         try {
             fxmlLoader.load();
             } catch (IOException e) {
-                System.err.println(e.getMessage()); 
-                System.err.println("Caused by . . ." + e.toString()); 
+                e.printStackTrace();
             }
          
     }

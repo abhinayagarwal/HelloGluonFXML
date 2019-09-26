@@ -2,21 +2,15 @@
 
 <?import com.gluonhq.charm.glisten.mvc.View?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Line?>
-
 
 <fx:root fx:id="pane" type="View" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonhq.hello.views.HelloPresenter">
    <children>
-               <HBox>
-                    <children>
-                        <Button id="mainMenu" fx:id="DisplayPanel" alignment="CENTER" mnemonicParsing="false" onAction="#displayPanel" text="%button.DisplayPanel.text" />
-                        <Button id="mainMenu" fx:id="RunSim" alignment="CENTER" mnemonicParsing="false" onAction="#startSimulation" text="%button.RunSim.text" />
-                    </children>
-               </HBox>
-               <Line endX="620.0" endY="40.0" startY="40.0" stroke="#0f1a51" />
+       <HBox>
+           <Button id="mainMenu" fx:id="DisplayPanel" alignment="CENTER" mnemonicParsing="false"
+                   onAction="#displayPanel" text="%button.DisplayPanel.text"/>
+           <Button id="mainMenu" fx:id="RunSim" alignment="CENTER" mnemonicParsing="false" onAction="#startSimulation"
+                   text="%button.RunSim.text"/>
+       </HBox>
    </children>
 </fx:root>

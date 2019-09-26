@@ -1,6 +1,6 @@
 plugins {
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.7'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
     id 'com.gluonhq.client-gradle-plugin' version '0.0.11'
 }
 
@@ -27,7 +27,9 @@ gluonClient {
             "com.gluonhq.hello.views.HelloPresenter", 
             "javafx.scene.control.Button", 
             "javafx.scene.control.Label",
-            "com.gluonhq.impl.charm.glisten.control.skin.GlistenButtonSkin"
+            "com.gluonhq.impl.charm.glisten.control.skin.GlistenButtonSkin",
+            "com.gluonhq.charm.glisten.mvc.View",
+            "javafx.geometry.Pos"
     ]
     verbose = true
 }
